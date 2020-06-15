@@ -1,5 +1,5 @@
 # TO-DO: Complete the selection_sort() function below
-arr = [4106, 9315, 94832, 94, 21732, 1, 10, 9, 39, 7]
+# arr = [4106, 9315, 94832, 94, 21732, 1, 10, 9, 39, 7]
 def selection_sort(arr):
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):
@@ -10,14 +10,14 @@ def selection_sort(arr):
         # (hint, can do in 3 loc)
         # Your code here
         for j in range(i+1, len(arr)): 
-            if arr[min_index] > arr[j]: 
+            if  arr[j] < arr[min_index] : 
                 min_index = j 
             # TO-DO: swap
             # Your code here
-            arr[i], arr[min_index] = arr[min_index], arr[i] 
+        arr[i], arr[min_index] = arr[min_index], arr[i] 
 
     return arr
-print(selection_sort(arr))
+# print(selection_sort(arr))
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
